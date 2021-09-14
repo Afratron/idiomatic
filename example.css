@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+}
+h1 {
+  text-align: center;
+  border-bottom: 2px solid black;
+  margin: 0;
+  padding: 10px;
+}
+ul {
+  border-right: 2px solid black;
+  width: 100px;
+  margin: 0;
+  padding-top: 10px;
+}
+#grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#subject, h3 {
+  padding: 10px;
+  display: inline;
+}
+#FS {
+  font-family: "Ink free", "MV Boli", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+}

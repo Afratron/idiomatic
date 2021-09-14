@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>1모둠 발표: 소개글</title>
+    <link rel="stylesheet" href="example.css">
+  </head>
+  <body>
+    <a href="https://terms.naver.com/entry.naver?docId=4294663&cid=47303&categoryId=47303"><h1>1모둠 발표</h1></a>
+    <div id="grid">
+      <ul>
+      <strong>목차</strong>
+      <li>관용표현</li>
+      <li>전하고 싶은 말</li>
+    </ul>
+    <!--이거 거의 다 내가 하네. 와 나 너무 착하다.-->
+    <div id="article">
+      <input id="night_day" type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    if(this.value === 'night'){
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      this.value = 'day';
+
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length){
+        alist[i].style.color = 'powderblue';
+        i = i + 1;
+      }
+    } else {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      this.value = 'night';
+
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length){
+        alist[i].style.color = 'blue';
+        i = i + 1;
+      }
+    }
+  ">
+    <h2 id="subject">주제: </h2><strong>우리 반을 위한 글</strong><br><br>
+    <!-- W = F*s-->
+    <!--W: 일 F: 힘 s: 변위-->
+    <div id="subject">관용표현:</div> 백지장도 맞들면 낫다.(<span id="FS">Many hands make light work.</span>)<br>
+    &nbsp;&nbsp;→ 쉬운 일이라도 협력하여 하면 훨씬 쉽다는 말.<br>
+    &nbsp;&nbsp;→ 협력을 의미한다.<br><br>
+
+    <div id="subject">전하고 싶은 말: </div><span id="FS">백지장도 맞들면 낫다듯이 우리 모두 협동하고 배려하는 반을 만들자.</span>
+
+    </div>
+    </div>
+  </body>
+</html>
